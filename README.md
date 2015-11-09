@@ -1,4 +1,5 @@
-#Guest Speaker App  
+#Guest Speaker App
+[![Build Status](https://travis-ci.org/ErikAbrahamson/guest-speaker-app.svg?branch=master)](https://travis-ci.org/ErikAbrahamson/guest-speaker-app)  
 An app to allow students to rate and provide feedback on a guest speaker.
 
 ##Schedule  
