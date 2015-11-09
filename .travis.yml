@@ -1,13 +1,17 @@
 language: node_js
-
 node_js:
-  - '5.0'
-  - '4.1'
-  - '4.0'
-  - '0.12'
-  - '0.11'
-
+- '5.0'
+- '4.1'
+- '4.0'
+- '0.12'
+- '0.11'
 before_script:
-  - npm install -g mocha
-
+- npm install -g mocha
 script: mocha
+deploy:
+  provider: heroku
+  api_key:
+    secure: Vpt2dy011zKxoqCv5Jz2glkgkY2FGL9DvtJGLI6wNF0J8OQlK+DM1W+saDqWS9V6rz9YhcTbUzpNkaTQ6CLWTad1dVEUp9m1FZBLcJHR1JW1tpzYRmW6YMkl79BZ2a83i/oRW9z+7GlAkIVqbob5qcrJhnSOHVwDLyOjYZHJxjBv8YJ5YpcaXxc2fxnYoPkvATIwZ6vCoqeccmlfpNcvJvCQt7gN7XcuGfAEa4RrFAHvtZV5cglLIgYm3JoLm7s14kkpn7iVMyc3SX/+2+EnlvfyYbt5CgOaRpBVt8CKoYrvAcGQ3rsh55JS+VPL2pWoUlwsGDGnRPQjPIlL22jz3ibaKn4pIr35lSwzfKnARt6fXSeTmcBJ/UCo2dvtACgYXBtsJZMiBcB6lFD54mJaHIAi3XnjQJjuP5PMaFNxk191gtU8hy0JXf/Zdx/+khD72ReLxxW7sSqwnlgAGV+0NyIkfayRUt4Hy7Lp9luf1e+1nsm91qtxbYGbFyTHBPQCRHU+PKpxnroW/+xIE7lLQkd8P8SZdG8LK+BRe+1Ma13FJwm/iImE1aVAqmbdOTOyPRedYO/0OVNnjerGtUhmV29oF31U1mPsOyfhO3Ef0p/h0J+9100ocSU6gTiSp+an/qXLpDjb4qQnsLq+h1CnZDfmnolT0vQrq1/Xsp5idsQ=
+  app: guest-speaker-app
+  on:
+    repo: ErikAbrahamson/guest-speaker-app
