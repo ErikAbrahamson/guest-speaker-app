@@ -23,8 +23,8 @@ An app to allow students to rate and provide feedback on a guest speaker.
 
 1. As a user-
   * View past speakers
-  * View future speakers
-  * vote on speakers
+  * View future topics
+  * Vote on past speakers
   * Give feedback/comments
   * Login
 1. As an admin-

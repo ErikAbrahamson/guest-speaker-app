@@ -24,7 +24,7 @@ describe('Server router', function() {
     chai.request(server)
     .get('/')
     .end(function(err, res) {
-      res.text.should.have.string('<p>ExpressJS</p>');
+      res.text.should.have.string('<h1>ExpressJS</h1>');
       done();
     });
   });
