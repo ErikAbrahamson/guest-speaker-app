@@ -21,13 +21,19 @@ An app to allow students to rate and provide feedback on a guest speaker.
 
 ##User Stories
 
-1. As a user-
+1. As a user, I want to:
   * View past speakers
-  * View future topics
+  * View upcoming speakers
   * Vote on past speakers
-  * Give feedback/comments
-  * Login
-1. As an admin-
+  * Add feedback/comments
+  * Vote on *potential* upcoming topics
+  * Login/logout
+  * Suggest speakers & topics
+1. As an admin, I want to:
+  * Approve/reject users wanting to login
+  * Toggle suggestion features
+  * CRUD topics
+  * Login/logout
   * CRUD students
   * CRUD speakers
 
