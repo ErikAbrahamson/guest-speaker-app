@@ -8,6 +8,7 @@ node_js:
 before_script:
 - npm install -g mocha
 script: istanbul cover _mocha -- --recursive -R spec
+after_script: npm run send-coverage
 deploy:
   provider: heroku
   api_key:
