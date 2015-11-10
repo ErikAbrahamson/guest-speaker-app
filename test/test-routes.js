@@ -10,10 +10,21 @@ chai.use(chaiHttp);
 
 describe('Server router', function() {
   it('Should return...', function(done) {
-    chai.request(server);
-    .get('/');
+    chai.request(server)
+    .get('/')
     .end(function(err, res) {
       res.should.have.status(200);
+      done();
+    });
+  });
+});
+
+describe('Server router', function() {
+  it('Should return...', function(done) {
+    chai.request(server)
+    .get('/')
+    .end(function(err, res) {
+      res.text.should.have.string('<p>ExpressJS</p>');
       done();
     });
   });

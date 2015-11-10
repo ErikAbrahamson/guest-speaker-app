@@ -22,11 +22,14 @@ An app to allow students to rate and provide feedback on a guest speaker.
 ##User Stories
 
 1. As a user-
-  * Story 1
-  * Story 2
+  * View past speakers
+  * View future speakers
+  * vote on speakers
+  * Give feedback/comments
+  * Login
 1. As an admin-
-  * Story 1
-  * Story 1  
+  * CRUD students
+  * CRUD speakers
 
 ##Stack
 
