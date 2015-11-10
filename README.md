@@ -49,3 +49,14 @@ An app to allow students to rate and provide feedback on a guest speaker.
 * Front End: jQuery
 * CSS Framework: Skeleton
 * Templates: Swig
+
+##Tests  
+
+Without code coverage  
+```sh
+$ npm test
+```
+With code coverage  
+```sh
+$ npm run coverage
+```
