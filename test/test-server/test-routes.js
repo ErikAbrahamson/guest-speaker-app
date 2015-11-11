@@ -8,13 +8,13 @@ var server = require('../../src/server/app.js');
 var should = chai.should();
 chai.use(chaiHttp);
 
-describe('Server router', function() {
-  it('Should return a 200 & HTML', function(done) {
+describe('server router', function() {
+  it('should return...', function(done) {
     chai.request(server)
     .get('/')
     .end(function(err, res) {
       res.should.have.status(200);
-      res.text.should.have.string('<h1>ExpressJS</h1>');
+      res.text.should.have.string('<p>Welcome to ExpressJS</p>');
       done();
     });
   });
